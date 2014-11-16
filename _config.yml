@@ -5,14 +5,16 @@ author:      Pascal Deschenes
 description: "Code, ideas, and more."
 baseurl:     ""
 url:         "http://blog.rassemblr.com"
+excerpt_separator: "<!-- more -->"
 
 # Google analytics
-google_analytics:
+google_analytics: UA-20143049-1
 
 # Optional features
 animated:           false
-show_related_posts: false
-show_post_footers:  false
+show_post_footers: true
+show_related_posts: true
+paginate:     3
 
 # Social icons
 show_social_icons: true 
@@ -20,13 +22,16 @@ github_username: pdeschen
 twitter_username: pdeschen
 google_plus_id:
 linkedin_username:
-bitcoin_url:
-paypal_url:
-flattr_button:
+
+# Disqus Comments
+comments: true
+disqus_short_name: rassemblingbits
+disqus_show_comment_count: true
 
 # Build settings
-markdown:     kramdown
+#markdown:     redcarpet 
+markdown:    kramdown 
+#highlighter:  rouge
 permalink:    pretty
-paginate:     3
 sass:
   compressed: true

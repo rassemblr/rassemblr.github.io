@@ -20,6 +20,8 @@ layout: default
   {{ content }}
 </article>
 
+{% include disqus.html %}
+
 {% if site.show_post_footers %}
   {% include post_footer.html %}
 {% endif %}
